@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Cabin', sans-serif;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator {
+	height: 600px;
+	width: 300px;
+	background-color: azure;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	border-radius: 30px;
+	background: #262931;
+	display: flex;
+	flex-direction: column;
+}
+
+.display {
+	background: #191c22;
+	border-radius: 30px 30px 0 0;
+	height: 200px;
+	width: 100%;
+	color: #f0f1f3;
+	font-size: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 1em;
+}
+
+.previous {
+	height: 100px;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 0.2em;
+}
+
+.previous-value {
+	font-size: 0.7em;
+}
+
+.curent {
+	height: 100px;
+}
+
+.current-output {
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+.buttonsGrid {
+	height: 400px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+		'clear backspace percent division'
+		'seven eight nine multiplication'
+		'four five six minus'
+		'one two three plus'
+		'dot zero equals equals';
+}
+
+#clear {
+	grid-area: clear;
+	font-size: 1.2em;
+}
+
+#backspace {
+	grid-area: backspace;
+	font-size: 0.8em;
+}
+
+#percent {
+	grid-area: percent;
+	font-size: 1.2em;
+}
+
+#division {
+	grid-area: division;
+}
+
+#seven {
+	grid-area: seven;
+}
+
+#eight {
+	grid-area: eight;
+}
+
+#nine {
+	grid-area: nine;
+}
+
+#multiplication {
+	grid-area: multiplication;
+}
+
+#four {
+	grid-area: four;
+}
+
+#five {
+	grid-area: five;
+}
+
+#six {
+	grid-area: six;
+}
+
+#minus {
+	grid-area: minus;
+}
+
+#one {
+	grid-area: one;
+}
+
+#two {
+	grid-area: two;
+}
+
+#three {
+	grid-area: three;
+}
+
+#plus {
+	grid-area: plus;
+}
+
+#dot {
+	grid-area: dot;
+}
+
+#zero {
+	grid-area: zero;
+}
+
+#equals {
+	grid-area: equals;
+	font-size: 2em;
+}
+
+button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.number {
+	color: #f0f1f3;
+}
+
+.operator {
+	color: #cc7070;
+	font-size: 1.8em;
+}
