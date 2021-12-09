@@ -66,6 +66,7 @@
 		'four five six minus'
 		'one two three plus'
 		'dot zero equals equals';
+	gap: 8px;
 }
 
 #clear {
@@ -154,6 +155,14 @@ button {
 	cursor: pointer;
 	font-size: 1.2em;
 	font-weight: bold;
+}
+
+button:hover {
+	transform: translateY(-1px);
+}
+
+button:active {
+	transform: translateY(1px);
 }
 
 .number {
