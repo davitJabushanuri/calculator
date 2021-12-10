@@ -5,11 +5,11 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="index.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
 		<title>Calculator</title>
 	</head>
 	<body>
@@ -17,21 +17,20 @@
 			<div class="calculator">
 				<div class="display">
 					<div class="previous">
-						<p class="previous-value">123</p>
+						<p id="previous-value"></p>
 					</div>
 					<div class="current">
-						<p class="current-output">90</p>
+						<p id="current-value"></p>
 					</div>
 				</div>
 				<div class="buttonsGrid">
-                    <button data-key='46' class="operator" id='clear'>C</button>
-                    <button data-key='8' class="operator" id='backspace'>&#9003;</button>
+                    <button data-key='46' class="clear-button" id='clear'>C</button>
+                    <button data-key='8' class="backspace-button" id='backspace'>&#9003;</button>
                     <button data-key='111' class="operator" id='division'>&#247</button>
-                    <button data-key='' class="operator" id='percent'>%</button>
                     <button data-key='106' class="operator" id='multiplication'>&times</button>
                     <button data-key='109' class="operator" id='minus'>-</button>
                     <button data-key='107' class="operator" id='plus'>+</button>
-                    <button data-key='187' class="operator" id='equals'>=</button>
+                    <button data-key='187' class="equals-button" id='equals'>=</button>
                     <button data-key='48' class="number" id="zero">0</button>
                     <button data-key='49' class="number" id="one">1</button>
                     <button data-key='50' class="number" id="two">2</button>
@@ -42,7 +41,7 @@
                     <button data-key='55' class="number" id="seven">7</button>
                     <button data-key='56' class="number" id="eight">8</button>
                     <button data-key='57' class="number" id="nine">9</button>
-                    <button data-key='190' class="number dot" id="dot">.</button>
+                    <button data-key='190' class="number" id="dot">.</button>
                 </div>
 			</div>
 		</div>

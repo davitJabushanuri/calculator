@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -43,15 +45,17 @@
 	padding-bottom: 0.2em;
 }
 
-.previous-value {
-	font-size: 0.7em;
+#previous-value {
+	font-size: 0.4em;
+	color: rgb(121, 129, 129);
+	font-weight: bold;
 }
 
 .curent {
 	height: 100px;
 }
 
-.current-output {
+#current-output {
 	font-size: 1.6em;
 	font-weight: bold;
 }
@@ -61,7 +65,7 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-areas:
-		'clear backspace percent division'
+		'clear clear backspace division'
 		'seven eight nine multiplication'
 		'four five six minus'
 		'one two three plus'
@@ -72,11 +76,13 @@
 #clear {
 	grid-area: clear;
 	font-size: 1.2em;
+	color: #26c4aa;
 }
 
 #backspace {
 	grid-area: backspace;
 	font-size: 0.8em;
+	color: #26c4aa;
 }
 
 #percent {
@@ -147,6 +153,7 @@
 #equals {
 	grid-area: equals;
 	font-size: 2em;
+	color: #cc7070;
 }
 
 button {
@@ -159,6 +166,7 @@ button {
 
 button:hover {
 	transform: translateY(-1px);
+	transform: scale(1.1);
 }
 
 button:active {
